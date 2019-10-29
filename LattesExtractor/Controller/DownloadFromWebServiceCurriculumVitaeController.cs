@@ -54,7 +54,10 @@ namespace LattesExtractor.Controller
                 if (curriculumVitae.NumeroCurriculo == null || curriculumVitae.NumeroCurriculo.Trim().Length == 0)
                 {
                     Logger.Error($"O número do curríuculo Lattes do professor {curriculumVitae.NomeProfessor} não foi encontrado");
-                    return;
+                    //gambi pra fazer funcionar quando usando csv sem num de curric
+                    //@TODO
+                    //  Descobrir qual eh o bug aqui
+                    //return;
                 }
 
                 int read;
